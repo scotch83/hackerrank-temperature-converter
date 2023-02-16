@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { TemperatureConverter } from './temperatureConverter/temperatureConverter.component';
 import { RouterModule } from '@angular/router';
 import {RouterTestingModule} from '@angular/router/testing';
-import { DecimalPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,9 +24,7 @@ import { DecimalPipe } from '@angular/common';
   exports: [
     RouterModule
   ],
-  providers: [
-    DecimalPipe
-  ],
+  providers: [],
   bootstrap: [AppComponent],
   schemas : [CUSTOM_ELEMENTS_SCHEMA]
 })

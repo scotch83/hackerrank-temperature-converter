@@ -4,7 +4,8 @@ import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'temperature-converter',
   templateUrl: './temperatureConverter.component.html',
-  styleUrls: ['./temperatureConverter.component.scss']
+  styleUrls: ['./temperatureConverter.component.scss'],
+  providers: [DecimalPipe]
 })
 
 export class TemperatureConverter {
